@@ -8,17 +8,28 @@
 <body>
     <h1>Tabelas grandes</h1>
     <table>
+        <colgroup>
+            <col class="azul">
+            <col>
+            <col class="azul">
+            <col>
+            <col class="azul">
+            <col>
+        </colgroup>
+        <caption>
+            Tabela Brasileirão
+        </caption>
         <thead>
-            <th>Time</th>
-            <th>Pontos</th>
-            <th>Jogos</th>
-            <th>Vitorias</th>
-            <th>Empates</th>
-            <th>Derrotas</th>
+            <th scope="col">Time</th>
+            <th scope="col">Pontos</th>
+            <th scope="col">Jogos</th>
+            <th scope="col">Vitorias</th>
+            <th scope="col">Empates</th>
+            <th scope="col">Derrotas</th>
         </thead>
         <tbody>
             <tr>
-                <th>Botafogo</th>
+                <th scope="row">Botafogo</th>
                 <td>36</td>
                 <td>14</td>
                 <td>12</td>
@@ -26,7 +37,7 @@
                 <td>2</td>
             </tr>
             <tr>
-                <th>Flamengo</th>
+                <th scope="row">Flamengo</th>
                 <td>26</td>
                 <td>14</td>
                 <td>8</td>
@@ -34,7 +45,7 @@
                 <td>4</td>
             </tr>
             <tr>
-                <th>Grêmio</th>
+                <th scope="row">Grêmio</th>
                 <td>26</td>
                 <td>14</td>
                 <td>8</td>
@@ -42,7 +53,7 @@
                 <td>4</td>
             </tr>
             <tr>
-                <th>Fluminense</th>
+                <th scope="row">Fluminense</th>
                 <td>24</td>
                 <td>14</td>
                 <td>7</td>
@@ -50,7 +61,7 @@
                 <td>4</td>
             </tr>
             <tr>
-                <th>Palmeiras</th>
+                <th scope="row">Palmeiras</th>
                 <td>24</td>
                 <td>14</td>
                 <td>6</td>
@@ -78,6 +89,15 @@
         font-size: 1.8em;
     }
 
+    caption {
+        border: 2px solid black;
+        border-bottom: 0px;
+    }
+/*
+    tbody > :nth-child(2n) {
+        background-color: rgb(167, 167, 167);
+    }
+*/
     th, td {
         border: 2px solid black;
         text-align: center;
@@ -85,5 +105,9 @@
 
     th {
         background-color: rgb(197, 197, 197);
+    }
+    
+    .azul {
+        background-color: aqua;
     }
 </style>
