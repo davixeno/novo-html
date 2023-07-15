@@ -7,72 +7,73 @@
 </head>
 <body>
     <h1>Tabelas grandes</h1>
-    <table>
-        <colgroup>
-            <col class="azul">
-            <col>
-            <col class="azul">
-            <col>
-            <col class="azul">
-            <col>
-        </colgroup>
-        <caption>
-            Tabela Brasileirão
-        </caption>
-        <thead>
-            <th scope="col">Time</th>
-            <th scope="col">Pontos</th>
-            <th scope="col">Jogos</th>
-            <th scope="col">Vitorias</th>
-            <th scope="col">Empates</th>
-            <th scope="col">Derrotas</th>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Botafogo</th>
-                <td>36</td>
-                <td>14</td>
-                <td>12</td>
-                <td>0</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <th scope="row">Flamengo</th>
-                <td>26</td>
-                <td>14</td>
-                <td>8</td>
-                <td>2</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <th scope="row">Grêmio</th>
-                <td>26</td>
-                <td>14</td>
-                <td>8</td>
-                <td>2</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <th scope="row">Fluminense</th>
-                <td>24</td>
-                <td>14</td>
-                <td>7</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <th scope="row">Palmeiras</th>
-                <td>24</td>
-                <td>14</td>
-                <td>6</td>
-                <td>6</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
-    </table>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="azul">
+                <col>
+                <col class="azul">
+                <col>
+                <col class="azul">
+                <col>
+            </colgroup>
+            <caption>
+                Tabela Brasileirão
+            </caption>
+            <thead>
+                <th scope="col">Time</th>
+                <th scope="col">Pontos</th>
+                <th scope="col">Jogos</th>
+                <th scope="col">Vitorias</th>
+                <th scope="col">Empates</th>
+                <th scope="col">Derrotas</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Botafogo</th>
+                    <td>36</td>
+                    <td>14</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Flamengo</th>
+                    <td>26</td>
+                    <td>14</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Grêmio</th>
+                    <td>26</td>
+                    <td>14</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fluminense</th>
+                    <td>24</td>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Palmeiras</th>
+                    <td>24</td>
+                    <td>14</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
 
@@ -82,10 +83,14 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
+    #container {
+        overflow: scroll;
+    }
+
     table {
         border-collapse: collapse;
-        width: 900px;
-        height: 400px;
+        width: 50vw;
+        height: 50vh;
         font-size: 1.8em;
     }
 
