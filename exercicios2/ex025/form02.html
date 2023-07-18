@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <div>
+            <div id="usuario">
+                <label for="iusu">Usuário: </label>
+                <input type="text" id="iusu" required autocomplete="username">
+            </div>
+            <div id="senha">
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required autocomplete="current-password">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+<style>
+    div {
+        margin-bottom: 10px;
+    }
+</style>
